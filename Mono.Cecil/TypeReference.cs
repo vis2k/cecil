@@ -277,7 +277,17 @@ namespace Mono.Cecil {
 			if (module == null)
 				throw new NotSupportedException ();
 
-			return module.Resolve (this);
+			// vis2k: workaround for https://github.com/jbevain/cecil/issues/573
+			// which affects Mirror: https://github.com/vis2k/Mirror/issues/791
+			// -> keep track of recursion depth
+			//
+			// TypeReference.Resolve
+			//   -> ModuleDefinition.Resolve(TypeReference) <---|
+			//      -> MetaDataResolver.Resolve(TypeReference)  |
+			//         -> GetType(ModuleDefinition)             |
+			//            -> ExportedType.Resolve()             |
+			//                ----------------------------------|
+			return module.Resolve (this, 0);
 		}
 	}
 

@@ -62,7 +62,7 @@ namespace Mono.Cecil {
 			if (module == null)
 				throw new NotSupportedException ();
 
-			return module.Resolve (this);
+			return module.Resolve (this, 0);
 		}
 	}
 }

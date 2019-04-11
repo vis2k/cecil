@@ -700,19 +700,31 @@ namespace Mono.Cecil {
 			return type;
 		}
 
-		internal FieldDefinition Resolve (FieldReference field)
+		internal FieldDefinition Resolve (FieldReference field, int recursionCount)
 		{
-			return MetadataResolver.Resolve (field);
+			// vis2k: workaround for https://github.com/jbevain/cecil/issues/573
+			if (recursionCount == 1024)
+				return null;
+
+			return MetadataResolver.Resolve (field, recursionCount + 1);
 		}
 
-		internal MethodDefinition Resolve (MethodReference method)
+		internal MethodDefinition Resolve (MethodReference method, int recursionCount)
 		{
-			return MetadataResolver.Resolve (method);
+			// vis2k: workaround for https://github.com/jbevain/cecil/issues/573
+			if (recursionCount == 1024)
+				return null;
+
+			return MetadataResolver.Resolve (method, recursionCount + 1);
 		}
 
-		internal TypeDefinition Resolve (TypeReference type)
+		internal TypeDefinition Resolve (TypeReference type, int recursionCount)
 		{
-			return MetadataResolver.Resolve (type);
+			// vis2k: workaround for https://github.com/jbevain/cecil/issues/573
+			if (recursionCount == 1024)
+				return null;
+
+			return MetadataResolver.Resolve (type, recursionCount + 1);
 		}
 
 		static void CheckContext (IGenericParameterProvider context, ModuleDefinition module)

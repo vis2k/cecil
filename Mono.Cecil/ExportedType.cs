@@ -225,9 +225,9 @@ namespace Mono.Cecil {
 			return FullName;
 		}
 
-		public TypeDefinition Resolve ()
+		public TypeDefinition Resolve (int recursionCount)
 		{
-			return module.Resolve (CreateReference ());
+			return module.Resolve (CreateReference (), recursionCount);
 		}
 
 		internal TypeReference CreateReference ()
