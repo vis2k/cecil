@@ -225,7 +225,8 @@ namespace Mono.Cecil {
 			return FullName;
 		}
 
-		public TypeDefinition Resolve (int recursionCount)
+		// = 0 default parameter to not break API because
+		public TypeDefinition Resolve (int recursionCount = 0)
 		{
 			return module.Resolve (CreateReference (), recursionCount);
 		}
