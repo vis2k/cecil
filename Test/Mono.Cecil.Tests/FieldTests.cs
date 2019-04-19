@@ -1,10 +1,8 @@
 using System;
-
-using Mono.Cecil.PE;
-
+using Mono.CecilX.PE;
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	[TestFixture]
 	public class FieldTests : BaseTestFixture {

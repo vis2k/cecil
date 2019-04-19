@@ -10,10 +10,9 @@
 
 using System;
 using System.IO;
+using Mono.CecilX.Cil;
 
-using Mono.Cecil.Cil;
-
-namespace Mono.Cecil.Pdb {
+namespace Mono.CecilX.Pdb {
 
 	public sealed class NativePdbReaderProvider : ISymbolReaderProvider {
 

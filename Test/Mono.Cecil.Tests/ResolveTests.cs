@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-using Mono.Cecil;
-using Mono.Cecil.Cil;
-
+using Mono.CecilX;
+using Mono.CecilX.Cil;
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	[TestFixture]
 	public class ResolveTests : BaseTestFixture {
@@ -26,7 +25,7 @@ namespace Mono.Cecil.Tests {
 			Assert.IsNotNull (definition);
 
 			Assert.AreEqual ("System.String System.String::Empty", definition.FullName);
-			Assert.AreEqual (Platform.OnCoreClr ? "System.Private.CoreLib" : "mscorlib", 
+			Assert.AreEqual (Platform.OnCoreClr ? "System.Private.CoreLib" : "mscorlib",
 				definition.Module.Assembly.Name.Name);
 		}
 
@@ -58,7 +57,7 @@ namespace Mono.Cecil.Tests {
 
 			Assert.AreEqual ("get_Length", definition.Name);
 			Assert.AreEqual ("System.String", definition.DeclaringType.FullName);
-			Assert.AreEqual (Platform.OnCoreClr ? "System.Private.CoreLib" : "mscorlib", 
+			Assert.AreEqual (Platform.OnCoreClr ? "System.Private.CoreLib" : "mscorlib",
 				definition.Module.Assembly.Name.Name);
 		}
 

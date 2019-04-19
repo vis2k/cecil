@@ -9,11 +9,10 @@
 
 using System;
 using System.Runtime.InteropServices;
-
-using Mono.Cecil.Cil;
+using Mono.CecilX.Cil;
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil.Pdb
+namespace Mono.CecilX.Pdb
 {
 	internal class SymWriter
 	{

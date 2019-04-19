@@ -8,7 +8,7 @@
 // Licensed under the MIT/X11 license.
 //
 
-namespace Mono.Cecil.Cil {
+namespace Mono.CecilX.Cil {
 
 	public enum ExceptionHandlerType {
 		Catch = 0,

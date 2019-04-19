@@ -15,10 +15,9 @@ using System.Security.Cryptography;
 using System.Runtime.Serialization;
 
 using Mono.Security.Cryptography;
+using Mono.CecilX.PE;
 
-using Mono.Cecil.PE;
-
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	// Most of this code has been adapted
 	// from Jeroen Frijters' fantastic work

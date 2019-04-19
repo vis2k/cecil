@@ -1,12 +1,10 @@
 using System.IO;
 using System.Linq;
-
-using Mono.Cecil.Cil;
-using Mono.Cecil.Pdb;
-
+using Mono.CecilX.Cil;
+using Mono.CecilX.Pdb;
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	[TestFixture]
 	public class PdbTests : BaseTestFixture {

@@ -10,10 +10,9 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
+using Mono.CecilX.Cil;
 
-using Mono.Cecil.Cil;
-
-namespace Mono.Cecil.Pdb {
+namespace Mono.CecilX.Pdb {
 
 	[Guid ("0B97726E-9E6D-4f05-9A26-424022093CAA")]
 	[InterfaceType (ComInterfaceType.InterfaceIsIUnknown)]

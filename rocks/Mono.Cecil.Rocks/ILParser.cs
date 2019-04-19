@@ -9,11 +9,10 @@
 //
 
 using System;
-
-using Mono.Cecil.Cil;
+using Mono.CecilX.Cil;
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil.Rocks {
+namespace Mono.CecilX.Rocks {
 
 #if INSIDE_ROCKS
 	public

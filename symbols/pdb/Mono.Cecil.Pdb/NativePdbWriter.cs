@@ -13,12 +13,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-
-using Mono.Cecil.Cil;
-using Mono.Cecil.PE;
+using Mono.CecilX.Cil;
+using Mono.CecilX.PE;
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil.Pdb {
+namespace Mono.CecilX.Pdb {
 
 	public class NativePdbWriter : ISymbolWriter {
 

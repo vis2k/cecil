@@ -8,7 +8,7 @@
 // Licensed under the MIT/X11 license.
 //
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public enum TokenType : uint {
 		Module = 0x00000000,

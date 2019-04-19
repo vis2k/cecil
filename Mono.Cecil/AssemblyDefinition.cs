@@ -13,7 +13,7 @@ using System.IO;
 
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public sealed class AssemblyDefinition : ICustomAttributeProvider, ISecurityDeclarationProvider, IDisposable {
 

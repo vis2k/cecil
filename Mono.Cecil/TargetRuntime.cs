@@ -8,7 +8,7 @@
 // Licensed under the MIT/X11 license.
 //
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public enum TargetRuntime {
 		Net_1_0,

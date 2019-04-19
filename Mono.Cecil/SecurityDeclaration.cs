@@ -12,7 +12,7 @@ using System;
 using System.Diagnostics;
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public enum SecurityAction : ushort {
 		Request = 1,

@@ -10,9 +10,9 @@
 
 using System;
 
-using MD = Mono.Cecil.Metadata;
+using MD = Mono.CecilX.Metadata;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public sealed class PinnedType : TypeSpecification {
 
@@ -29,7 +29,7 @@ namespace Mono.Cecil {
 			: base (type)
 		{
 			Mixin.CheckType (type);
-			this.etype = MD.ElementType.Pinned;
+			this.etype = Metadata.ElementType.Pinned;
 		}
 	}
 }

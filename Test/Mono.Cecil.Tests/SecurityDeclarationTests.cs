@@ -4,13 +4,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-using Mono.Cecil;
-using Mono.Cecil.Metadata;
-using Mono.Cecil.PE;
-
+using Mono.CecilX;
+using Mono.CecilX.PE;
+using Mono.CecilX.Metadata;
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	[TestFixture]
 	public class SecurityDeclarationTests : BaseTestFixture {

@@ -10,9 +10,9 @@
 
 using System;
 
-using MD = Mono.Cecil.Metadata;
+using MD = Mono.CecilX.Metadata;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public interface IModifierType {
 		TypeReference ModifierType { get; }
@@ -60,7 +60,7 @@ namespace Mono.Cecil {
 				throw new ArgumentNullException (Mixin.Argument.modifierType.ToString ());
 			Mixin.CheckType (type);
 			this.modifier_type = modifierType;
-			this.etype = MD.ElementType.CModOpt;
+			this.etype = Metadata.ElementType.CModOpt;
 		}
 	}
 
@@ -105,7 +105,7 @@ namespace Mono.Cecil {
 				throw new ArgumentNullException (Mixin.Argument.modifierType.ToString ());
 			Mixin.CheckType (type);
 			this.modifier_type = modifierType;
-			this.etype = MD.ElementType.CModReqD;
+			this.etype = Metadata.ElementType.CModReqD;
 		}
 
 	}

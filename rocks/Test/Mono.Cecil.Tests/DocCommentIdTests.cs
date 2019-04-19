@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 
 using NUnit.Framework;
-
-using Mono.Cecil.Rocks;
+using Mono.CecilX.Rocks;
 
 namespace N
 {
 
     /// <summary>
-    /// ID string generated is "T:N.X". 
+    /// ID string generated is "T:N.X".
     /// </summary>
     public class X : IX<KVP<string, int>>
     {
@@ -52,13 +51,13 @@ namespace N
 
 
         /// <summary>
-        /// ID string generated is "M:N.X.gg(System.Int16[],System.Int32[0:,0:])". 
+        /// ID string generated is "M:N.X.gg(System.Int16[],System.Int32[0:,0:])".
         /// </summary>
         public int gg(short[] array1, int[,] array) { return 0; }
 
 
         /// <summary>
-        /// ID string generated is "M:N.X.op_Addition(N.X,N.X)". 
+        /// ID string generated is "M:N.X.op_Addition(N.X,N.X)".
         /// </summary>
         public static X operator +(X x, X xx) { return x; }
 
@@ -90,7 +89,7 @@ namespace N
 
 
         /// <summary>
-        /// ID string generated is "T:N.X.D". 
+        /// ID string generated is "T:N.X.D".
         /// </summary>
         public delegate void D(int i);
 
@@ -118,7 +117,7 @@ namespace N
 	public class KVP<K, T> { }
 }
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	[TestFixture]
 	public class DocCommentIdTests {
@@ -182,7 +181,7 @@ namespace Mono.Cecil.Tests {
 
 			AssertDocumentID ("M:N.X.bb(System.String,System.Int32@)", method);
 		}
-		
+
 		[Test]
 		public void MethodWithArrayParameters ()
 		{

@@ -27,7 +27,7 @@ namespace Mono {
 	}
 }
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	static partial class Mixin {
 

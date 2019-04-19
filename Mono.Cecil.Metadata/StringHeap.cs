@@ -12,7 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Mono.Cecil.Metadata {
+namespace Mono.CecilX.Metadata {
 
 	class StringHeap : Heap {
 

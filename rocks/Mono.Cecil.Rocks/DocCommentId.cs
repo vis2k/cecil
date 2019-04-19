@@ -12,7 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Mono.Cecil.Rocks {
+namespace Mono.CecilX.Rocks {
 
 	public class DocCommentId
 	{

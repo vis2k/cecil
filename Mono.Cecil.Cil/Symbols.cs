@@ -15,10 +15,10 @@ using System.Runtime.InteropServices;
 using SR = System.Reflection;
 
 using Mono.Collections.Generic;
-using Mono.Cecil.Cil;
-using Mono.Cecil.PE;
+using Mono.CecilX.Cil;
+using Mono.CecilX.PE;
 
-namespace Mono.Cecil.Cil {
+namespace Mono.CecilX.Cil {
 
 	[StructLayout (LayoutKind.Sequential)]
 	public struct ImageDebugDirectory {
@@ -1044,7 +1044,7 @@ namespace Mono.Cecil.Cil {
 	}
 }
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	static partial class Mixin {
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Mono.Cecil.Pdb {
+namespace Mono.CecilX.Pdb {
 
 	[ComImport, InterfaceType (ComInterfaceType.InterfaceIsIUnknown), Guid ("BA3FEE4C-ECB9-4e41-83B7-183FA41CD859")]
 	interface IMetaDataEmit {

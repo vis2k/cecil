@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Threading;
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	sealed class MemberReferenceProjection {
 

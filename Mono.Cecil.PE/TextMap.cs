@@ -12,7 +12,7 @@ using System;
 
 using RVA = System.UInt32;
 
-namespace Mono.Cecil.PE {
+namespace Mono.CecilX.PE {
 
 	enum TextSegment {
 		ImportAddressTable,

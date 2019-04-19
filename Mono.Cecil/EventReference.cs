@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public abstract class EventReference : MemberReference {
 

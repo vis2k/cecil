@@ -11,7 +11,7 @@
 using System;
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public sealed class FieldDefinition : FieldReference, IMemberDefinition, IConstantProvider, IMarshalInfoProvider {
 

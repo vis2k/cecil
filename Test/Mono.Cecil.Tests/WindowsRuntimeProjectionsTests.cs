@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 	[TestFixture]
 	public abstract class BaseWindowsRuntimeProjectionsTests : BaseTestFixture {
 		protected abstract string ModuleName { get; }

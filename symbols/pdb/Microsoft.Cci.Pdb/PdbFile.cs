@@ -12,7 +12,7 @@ using System;
 
 using System.Collections.Generic;
 using System.IO;
-using Mono.Cecil.Cil;
+using Mono.CecilX.Cil;
 
 namespace Microsoft.Cci.Pdb {
   internal class PdbFile {

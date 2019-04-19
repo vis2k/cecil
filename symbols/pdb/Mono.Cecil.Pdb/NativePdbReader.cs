@@ -15,10 +15,9 @@ using System.IO;
 using Mono.Collections.Generic;
 
 using Microsoft.Cci.Pdb;
+using Mono.CecilX.Cil;
 
-using Mono.Cecil.Cil;
-
-namespace Mono.Cecil.Pdb {
+namespace Mono.CecilX.Pdb {
 
 	public class NativePdbReader : ISymbolReader {
 

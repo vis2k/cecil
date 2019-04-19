@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using SR = System.Reflection;
 using System.Runtime.CompilerServices;
-
-using Mono.Cecil.Cil;
-
+using Mono.CecilX.Cil;
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	[TestFixture]
 	public class ImportReflectionTests : BaseTestFixture {

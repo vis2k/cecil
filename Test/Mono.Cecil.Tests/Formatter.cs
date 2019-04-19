@@ -1,9 +1,9 @@
 using System;
 using System.IO;
-using Mono.Cecil;
-using Mono.Cecil.Cil;
+using Mono.CecilX;
+using Mono.CecilX.Cil;
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	public static class Formatter {
 

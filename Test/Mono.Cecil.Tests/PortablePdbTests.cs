@@ -3,11 +3,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using Mono.CecilX.Cil;
+using Mono.CecilX.PE;
 
-using Mono.Cecil.Cil;
-using Mono.Cecil.PE;
-
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	[TestFixture]
 	public class PortablePdbTests : BaseTestFixture {

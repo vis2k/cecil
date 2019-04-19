@@ -10,13 +10,11 @@
 
 using System;
 using System.IO;
-
-using Mono.Cecil.Cil;
-using Mono.Cecil.Metadata;
-
+using Mono.CecilX.Cil;
+using Mono.CecilX.Metadata;
 using RVA = System.UInt32;
 
-namespace Mono.Cecil.PE {
+namespace Mono.CecilX.PE {
 
 	sealed class ImageWriter : BinaryStreamWriter {
 
@@ -589,7 +587,7 @@ namespace Mono.Cecil.PE {
 
 				data_start += entry.Data.Length;
 			}
-			
+
 			for (var i = 0; i < debug_header.Entries.Length; i++) {
 				var entry = debug_header.Entries [i];
 				WriteBytes (entry.Data);
@@ -699,7 +697,7 @@ namespace Mono.Cecil.PE {
 				for (var i = 0; i < debug_header.Entries.Length; i++) {
 					var entry = debug_header.Entries [i];
 					var directory = entry.Directory;
-					
+
 					directory.AddressOfRawData = entry.Data.Length == 0 ? 0 : data_address;
 					entry.Directory = directory;
 

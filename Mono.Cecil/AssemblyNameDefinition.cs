@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public sealed class AssemblyNameDefinition : AssemblyNameReference {
 

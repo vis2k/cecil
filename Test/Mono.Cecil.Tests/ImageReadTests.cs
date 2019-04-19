@@ -2,14 +2,13 @@ using System;
 using System.IO;
 using System.Linq;
 
-using Mono.Cecil;
-using Mono.Cecil.Cil;
-using Mono.Cecil.PE;
-using Mono.Cecil.Metadata;
-
+using Mono.CecilX;
+using Mono.CecilX.PE;
+using Mono.CecilX.Cil;
+using Mono.CecilX.Metadata;
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	[TestFixture]
 	public class ImageReadTests : BaseTestFixture {

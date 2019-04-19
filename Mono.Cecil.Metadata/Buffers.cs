@@ -11,12 +11,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
-using Mono.Cecil.PE;
-
+using Mono.CecilX.PE;
 using RVA = System.UInt32;
 
-namespace Mono.Cecil.Metadata {
+namespace Mono.CecilX.Metadata {
 
 	sealed class TableHeapBuffer : HeapBuffer {
 
@@ -388,7 +386,7 @@ namespace Mono.Cecil.Metadata {
 		}
 
 		// Sorts strings such that a string is followed immediately by all strings
-		// that are a suffix of it.  
+		// that are a suffix of it.
 		private class SuffixSort : IComparer<KeyValuePair<string, uint>> {
 
 			public int Compare(KeyValuePair<string, uint> xPair, KeyValuePair<string, uint> yPair)

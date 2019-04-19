@@ -13,7 +13,7 @@ using Microsoft.CodeAnalysis.Emit;
 using CS = Microsoft.CodeAnalysis.CSharp;
 #endif
 
-namespace Mono.Cecil.Tests {
+namespace Mono.CecilX.Tests {
 
 	struct CompilationResult {
 		internal DateTime source_write_time;
@@ -170,8 +170,8 @@ namespace Mono.Cecil.Tests {
 			var source = File.ReadAllText (name);
 
 			var tpa = BaseAssemblyResolver.TrustedPlatformAssemblies.Value;
-			
-			var references = new [] 
+
+			var references = new []
 			{
 				MetadataReference.CreateFromFile (tpa ["netstandard"]),
 				MetadataReference.CreateFromFile (tpa ["mscorlib"]),
@@ -185,9 +185,9 @@ namespace Mono.Cecil.Tests {
 			switch (extension) {
 			case ".cs":
 				return CS.CSharpCompilation.Create (
-					assemblyName, 
+					assemblyName,
 					new [] { CS.SyntaxFactory.ParseSyntaxTree (source) },
-					references, 
+					references,
 					new CS.CSharpCompilationOptions (OutputKind.DynamicallyLinkedLibrary, optimizationLevel: OptimizationLevel.Release));
 			default:
 				throw new NotSupportedException ();

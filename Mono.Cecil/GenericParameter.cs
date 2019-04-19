@@ -11,10 +11,9 @@
 using System;
 
 using Mono.Collections.Generic;
+using Mono.CecilX.Metadata;
 
-using Mono.Cecil.Metadata;
-
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public sealed class GenericParameter : TypeReference, ICustomAttributeProvider {
 

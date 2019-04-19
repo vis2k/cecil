@@ -13,7 +13,7 @@ using System.Text;
 
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public class MethodReference : MemberReference, IMethodSignature, IGenericParameterProvider, IGenericContext {
 

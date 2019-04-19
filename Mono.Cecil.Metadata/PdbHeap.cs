@@ -8,11 +8,11 @@
 // Licensed under the MIT/X11 license.
 //
 
-using Mono.Cecil.PE;
+using Mono.CecilX.PE;
 
 using RID = System.UInt32;
 
-namespace Mono.Cecil.Metadata {
+namespace Mono.CecilX.Metadata {
 
 	sealed class PdbHeap : Heap {
 

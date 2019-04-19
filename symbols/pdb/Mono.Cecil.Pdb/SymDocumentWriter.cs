@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Mono.Cecil.Pdb
+namespace Mono.CecilX.Pdb
 {
 	internal class SymDocumentWriter
 	{

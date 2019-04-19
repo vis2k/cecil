@@ -13,7 +13,7 @@ using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	public class AssemblyNameReference : IMetadataScope {
 

@@ -12,7 +12,7 @@ using System;
 
 using Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace Mono.CecilX {
 
 	sealed class ParameterDefinitionCollection : Collection<ParameterDefinition> {
 
