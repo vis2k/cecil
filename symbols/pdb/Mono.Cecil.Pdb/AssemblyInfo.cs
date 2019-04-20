@@ -11,6 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: AssemblyTitle ("Mono.Cecil.Pdb")]
+[assembly: AssemblyTitle ("Mono.CecilX.Pdb")]
 
 [assembly: CLSCompliant (false)]

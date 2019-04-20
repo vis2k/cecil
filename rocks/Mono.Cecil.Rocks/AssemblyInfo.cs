@@ -11,6 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: AssemblyTitle ("Mono.Cecil.Rocks")]
+[assembly: AssemblyTitle ("Mono.CecilX.Rocks")]
 
 [assembly: CLSCompliant (false)]
